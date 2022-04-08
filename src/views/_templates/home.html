@@ -1,0 +1,31 @@
+{% extends "../../views/_partials/_main.html" %} {% block main %}
+
+<section class="filters p-0 border-bottom border-primary">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 p-0" style="background-color: #f3f3f3">
+        <h3>Kullanıcı Aktivite</h3>
+        <ul id="chatStatus"></ul>
+      </div>
+      <div class="col-lg-6 p-0" style="background-color: antiquewhite">
+        <h3>Mesaj Kutusu</h3>
+        <ul style="list-style-type: none; min-height: 280px" id="messages"></ul>
+        <form>
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="messageInput"
+              placeholder="Dünyaya mesaj gönder"
+              autocomplete="off"
+            />
+          </div>
+          <button id="messageButton" class="btn btn-primary btn-block">
+            Gönder
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

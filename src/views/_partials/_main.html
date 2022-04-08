@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+{% include "./_head.html" %}
+
+
+<body class="{{bodyClasses}}">
+
+    {% include "./_navbar.html" %}
+
+
+
+        {% block main %}
+        {% endblock %}
+
+
+
+    {% include "./_footer.html" %}
+
+</body>
+
+</html>
