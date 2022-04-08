@@ -1,1 +1,1 @@
-# simple-socket
+# simple node socket app
